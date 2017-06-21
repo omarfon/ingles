@@ -1,0 +1,18 @@
+page-vocabulary-detail {
+    .transparente{
+        background-color: transparent!important;
+    }
+    ion-avatar{
+        margin:0!important;
+    }
+    .item-md.item-block .item-inner {
+        border-bottom:none !important;
+    }
+    .swiper-wrapper{
+        height: 70%;
+    }
+    .tituloVocabulario{
+        font-size:1.5em;
+        color: #3FC6F5;
+    }
+}

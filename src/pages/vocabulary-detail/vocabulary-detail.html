@@ -1,0 +1,29 @@
+
+<ion-header>
+
+  <ion-navbar color="azul">
+    <ion-title>Vocabulary </ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+  <ion-slides pager>
+    <ion-slide *ngFor="let slide of vo.slides">
+      <ion-card >
+        <img [src]="slide.imagen"/>
+        <ion-card-content>
+            <p class="tituloVocabulario">{{slide.textoIngles}}</p>
+             <p class="traduccionVocabulario">{{slide.traducion}}</p>
+             <div class="botonReproducir">
+                <button ion-fab rounded right (click)="reproducir(slide)">
+                  <ion-icon name="play" ></ion-icon>
+                </button>
+             </div>
+        </ion-card-content>  
+      </ion-card>
+    </ion-slide> 
+  </ion-slides> 
+  </ion-content>

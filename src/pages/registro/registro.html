@@ -1,0 +1,39 @@
+
+<ion-header >
+  <ion-navbar color="ifeep">
+    <ion-title>registro</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding text-center>
+   <button ion-button primary block color="azul">Facebook</button>
+   <button ion-button primary block >Google</button>
+
+   <h3 text-center>O</h3>
+   <p>registrate con email:</p>
+   <ion-list>
+      <ion-item>
+      <ion-label floating>Usuario</ion-label>
+      <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label floating>Email</ion-label>
+      <ion-input type="text"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label floating>Contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+      </ion-item>
+
+      <ion-item>
+      <ion-label floating>Repetir contraseña</ion-label>
+      <ion-input type="password"></ion-input>
+      </ion-item>
+    </ion-list>
+
+    <button ion-button text-center (click)="irAList()" full color="ifeep">registrar</button>
+     
+</ion-content>

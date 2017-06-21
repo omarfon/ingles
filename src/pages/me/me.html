@@ -1,0 +1,30 @@
+
+<ion-header>
+  <ion-navbar color="ifeep">
+    <ion-grid>
+     <ion-row>
+       <ion-col col-4><ion-title>Wordbank</ion-title></ion-col>
+       <ion-col col-8>
+          <ion-searchbar ion-start
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel">
+    </ion-searchbar>
+       </ion-col>
+     </ion-row>
+     </ion-grid>
+    
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+    <ion-list>
+      
+      <ion-item *ngFor="let sonido of sonidos" >
+          <ion-avatar  item-start>
+            <img [src]="sonido.imagen">
+          </ion-avatar>
+         <h3>{{sonido.palabra}}</h3>
+         <p>{{sonido.traduccion}}</p>
+           <button ion-button clear item-end><ion-icon name="play" (click)="escuchar(sonido)"></ion-icon></button>
+      </ion-item>
+    </ion-list>
+</ion-content>
