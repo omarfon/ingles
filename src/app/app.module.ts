@@ -1,3 +1,5 @@
+import { MisdatosPage } from './../pages/misdatos/misdatos';
+import { ConfigPage } from './../pages/config/config';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -26,6 +28,7 @@ import { DetallegramaticaPage } from './../pages/detallegramatica/detallegramati
 
 
 import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-detail';
+
  
 
 @NgModule({
@@ -39,7 +42,9 @@ import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-deta
     BienvenidaPage,
     VocabularyDetailPage,
     GramaticaPage,
-    DetallegramaticaPage
+    DetallegramaticaPage,
+    ConfigPage,
+    MisdatosPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +61,9 @@ import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-deta
     BienvenidaPage,
     VocabularyDetailPage,
     GramaticaPage,
-    DetallegramaticaPage
+    DetallegramaticaPage,
+    ConfigPage,
+    MisdatosPage
   ],
   providers: [
     StatusBar,

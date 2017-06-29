@@ -3,18 +3,24 @@
   <ion-navbar color="ifeep">
     <ion-grid>
      <ion-row>
-       <ion-col col-4><ion-title>Wordbank</ion-title></ion-col>
-       <ion-col col-8>
-          <ion-searchbar ion-start
-            [(ngModel)]="query"
-            [showCancelButton]="shouldShowCancel"
-            (ionInput)="onInput()">
-    </ion-searchbar>
-       </ion-col>
-     </ion-row>
-     </ion-grid>
-    
-  </ion-navbar>
+       <ion-navbar hideBackButton="true">
+        <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-toolbar>
+          <ion-title> Vocabulary </ion-title>
+        </ion-toolbar>
+        </ion-navbar>
+            <ion-col >
+                <ion-searchbar ion-start
+                  [(ngModel)]="query"
+                  [showCancelButton]="shouldShowCancel"
+                  (ionInput)="onInput()">
+          </ion-searchbar>
+            </ion-col>
+          </ion-row>
+          </ion-grid>
+        </ion-navbar>
 </ion-header>
 <ion-content padding>
     <ion-list>
