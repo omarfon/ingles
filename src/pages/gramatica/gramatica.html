@@ -1,17 +1,20 @@
 
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>gramatica one</ion-title>
+  <ion-navbar color="azul">
+    <ion-title>Gramatica</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content>
-  <ion-list>
-    <ion-item *ngFor="let g of gramatica" (click)="irADetalleGramatica(g)">
-        <h1>{{g.titulo}}</h1>
-    </ion-item>
-  </ion-list>
+    <ion-card *ngFor="let g of gramatica" (click)="irADetalleGramatica(g)">
+        <ion-card-header>
+            {{g.titulo}}
+        </ion-card-header>
+        <ion-card-content>
+          {{g.contenido}}
+        </ion-card-content>
+    </ion-card>
 </ion-content>

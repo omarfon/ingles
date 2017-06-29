@@ -6,8 +6,9 @@
        <ion-col col-4><ion-title>Wordbank</ion-title></ion-col>
        <ion-col col-8>
           <ion-searchbar ion-start
-      [(ngModel)]="myInput"
-      [showCancelButton]="shouldShowCancel">
+            [(ngModel)]="query"
+            [showCancelButton]="shouldShowCancel"
+            (ionInput)="onInput()">
     </ion-searchbar>
        </ion-col>
      </ion-row>

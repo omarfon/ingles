@@ -11,14 +11,17 @@ import { Sonidos } from '../../assets/interfaces/sonidos.interface';
 })
 export class MePage {
 
-  sonidos:Sonidos [] = [];
+  query:string = "";
 
+  sonidos:Sonidos [] = [];
+  sonidosCopy:Sonidos [] = [];
   sonido: null;
 
   constructor(public navCtrl: NavController, 
               public navParams: NavParams) {
 
     this.sonidos = SONIDOS;
+    this.sonidosCopy = this.sonidos;
   }
 
   escuchar(sonido){
@@ -32,6 +35,17 @@ export class MePage {
   sonido.reproduciendo = true;
 
   setTimeout(()=> sonido.reproduciendo = false, sonido.duracion * 1000);
+}
+onInput(){
+  this.sonidos = this.sonidosCopy;
+
+    let val = this.query;
+    // if the value is an empty string don't filter the items
+    if (val && val.trim() != '') {
+      this.sonidos = this.sonidos.filter((sonido) => {
+        return (sonido.palabra.toLowerCase().indexOf(val.toLowerCase()) > -1);
+      })
+    }
 }
 }
 
