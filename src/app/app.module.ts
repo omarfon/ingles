@@ -21,6 +21,9 @@ import { CursosPage } from '../pages/cursos/cursos';
 import { VocabularioPage } from '../pages/vocabulario/vocabulario';
 import { ExercisesPage } from '../pages/exercises/exercises';
 import { MePage } from '../pages/me/me';
+import { GramaticaPage } from './../pages/gramatica/gramatica';
+import { DetallegramaticaPage } from './../pages/detallegramatica/detallegramatica';
+
 
 import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-detail';
  
@@ -34,7 +37,9 @@ import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-deta
     CursosPage, VocabularioPage, ExercisesPage, MePage,
     TabsPage,
     BienvenidaPage,
-    VocabularyDetailPage
+    VocabularyDetailPage,
+    GramaticaPage,
+    DetallegramaticaPage
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,9 @@ import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-deta
     CursosPage, VocabularioPage, ExercisesPage, MePage,
     TabsPage,
     BienvenidaPage,
-    VocabularyDetailPage
+    VocabularyDetailPage,
+    GramaticaPage,
+    DetallegramaticaPage
   ],
   providers: [
     StatusBar,
