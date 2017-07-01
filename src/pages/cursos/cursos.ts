@@ -21,7 +21,7 @@ export class CursosPage {
               public navParams: NavParams
 ) {
 
-  this.vocabulario = VOCABULARIO.splice(0);
+  this.vocabulario = VOCABULARIO;
 
 }
 irAVocabularyDetail(vo){

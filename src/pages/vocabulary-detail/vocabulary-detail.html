@@ -2,7 +2,7 @@
 <ion-header>
 
   <ion-navbar color="azul">
-    <ion-title>Vocabulary </ion-title>
+    <ion-title>{{vo.titulo}} </ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -17,10 +17,11 @@
         <ion-card-content>
             <p class="tituloVocabulario">{{slide.textoIngles}}</p>
              <p class="traduccionVocabulario">{{slide.traducion}}</p>
-             <div class="botonReproducir">
-                <button ion-fab rounded right (click)="reproducir(slide)">
-                  <ion-icon name="play" ></ion-icon>
+             <div class="botonReproducir" text-center>
+                <button ion-fab rounded  (click)="reproducir(slide)" >
+                  <ion-icon name="play"></ion-icon>
                 </button>
+                <button ion-button color="ifeep">reproduce la frase con esta palabra</button>
              </div>
         </ion-card-content>  
       </ion-card>

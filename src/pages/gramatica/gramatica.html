@@ -1,6 +1,6 @@
 
 <ion-header>
-  <ion-navbar hideBackButton="true">
+  <ion-navbar hideBackButton="true" color="ifeep">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -11,13 +11,22 @@
 </ion-header>
 
 
-<ion-content>
+<ion-content class="colorGris">
     <ion-card *ngFor="let g of gramatica" (click)="irADetalleGramatica(g)">
         <ion-card-header>
-            {{g.titulo}}
+            <h2 class="tituloGramatica">{{g.titulo}}</h2>
         </ion-card-header>
         <ion-card-content>
-          {{g.contenido}}
+          <ion-grid>
+            <ion-row>
+              <ion-col col-10>{{g.resumen}}</ion-col>
+              <ion-col col-2>
+                  <button ion-item>
+            <ion-icon name="arrow-dropright-circle" item-end color="ifeep"></ion-icon>
+          </button>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
         </ion-card-content>
     </ion-card>
 </ion-content>

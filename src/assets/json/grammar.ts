@@ -1,9 +1,10 @@
 export const GRAMMAR =[
     {
         id: 1,
-        imagen:'',
+        imagen:'assets/img/grammar/tobepresente.jpg',
         titulo:'Verb To Be',
-        contenido:'',
+        resumen:'El verbo TO BE, que en castellano se traduce como SER o ESTAR',
+        contenido:'El verbo TO BE, que en castellano se traduce como SER o ESTAR, en el idioma inglés goza de una particular importancia. Su significado depende del sentido de la oración. Por ejemplo:I am a doctor. Soy un doctor. (Se aplica como verbo ser) I am in my house. Estoy en mi casa. (Se aplica como verbo estar) En el siguiente cuadro se puede observar su declinación en el modo indicativo del Presente Simple:',
         icono:''   
     },
     {

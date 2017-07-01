@@ -30,7 +30,7 @@ export const VOCABULARIO =[
                     traducion: "Papel",
                     sonido: "assets/sonidos/paper.mp3",
                     duracion: "2",
-                    imagen: "assets/img/slides/paper.jpg",
+                    imagen: "assets/img/slides/paper.png",
                     reproduciendo: false
                 },
                 {
@@ -39,7 +39,7 @@ export const VOCABULARIO =[
                     traducion: "Cuaderno",
                     sonido: "assets/sonidos/notebook.mp3",
                     duracion: "2",
-                    imagen: "assets/img/slides/notebook.png",
+                    imagen: "assets/img/slides/notebook.jpg",
                     reproduciendo: false
                 },
                 {
@@ -66,14 +66,14 @@ export const VOCABULARIO =[
         id:2,
         leccion: "Lesson Two",
         titulo: "Caracters",
-        imagen: "assets/img/caracters.png",
+        imagen: "assets/img/graduation.png",
         audio: "assets/audio/caracters.mp3"
     },
     {
         id:3,
         leccion: "Lesson three",
         titulo: "Family",
-        imagen: "assets/img/family.png",
+        imagen: "assets/img/school-bus.png",
         audio: "assets/audio/family.mp3"
     },
     {
