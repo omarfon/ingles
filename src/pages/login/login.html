@@ -10,18 +10,25 @@
 
 <ion-content padding>
   <div class="botonesLogin">
-    <ion-list inset>
-      <ion-item>
+    
+      <form #formulario="ngForm">
+        <ion-item >
       <ion-label floating>Usuario</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text"
+                required 
+                name="correo"
+                ngModel></ion-input>
       </ion-item>
 
       <ion-item>
       <ion-label  floating>Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password"
+                required 
+                name="clave"
+                ngModel></ion-input>
       </ion-item>
-    </ion-list>
-     <button ion-button primary  (click)="irAList()" full>Ingresar</button>
+     <button ion-button primary  (click)="iniciarSesion(formulario)" full>Ingresar</button>
+  </form>
   </div>
     
      

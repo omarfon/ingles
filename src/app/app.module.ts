@@ -9,6 +9,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 
+
 //paginas de registro
 import { LoginPage } from '../pages/login/login';
 import { RegistroPage } from '../pages/registro/registro';
@@ -28,8 +29,19 @@ import { DetallegramaticaPage } from './../pages/detallegramatica/detallegramati
 
 
 import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-detail';
+import { AutenticacionService } from "./servicios/autenticacion.service";
 
+import { AngularFireModule } from 'angularfire2';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
  
+export const firebaseConfig = {
+  apiKey: "AIzaSyCaCUfymN17RrmknxSQoZY4WtapUlosvR4",
+    authDomain: "medicalappoinments.firebaseapp.com",
+    databaseURL: "https://medicalappoinments.firebaseio.com",
+    projectId: "medicalappoinments",
+    storageBucket: "medicalappoinments.appspot.com",
+    messagingSenderId: "133678678971"
+};
 
 @NgModule({
   declarations: [
@@ -48,7 +60,9 @@ import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-deta
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AngularFireModule.initializeApp(firebaseConfig,'medicalappoinments'),
+    AngularFireDatabaseModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -68,7 +82,8 @@ import { VocabularyDetailPage } from '../pages/vocabulary-detail/vocabulary-deta
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    AutenticacionService
 
   ]
 })

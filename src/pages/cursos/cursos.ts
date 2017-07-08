@@ -8,6 +8,7 @@ import { Vocabulary } from '../../assets/interfaces/vocabulary.interface';
 
 
 
+
 @Component({
   selector: 'page-cursos',
   templateUrl: 'cursos.html',

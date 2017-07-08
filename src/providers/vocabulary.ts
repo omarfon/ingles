@@ -1,12 +1,18 @@
 import { Injectable } from '@angular/core';
-import { Http } from '@angular/http';
-import 'rxjs/add/operator/map';
+import { FirebaseListObservable, AngularFireDatabase } from "angularfire2/database";
+
 
 @Injectable()
 export class VocabularyService {
 
-  constructor(public http: Http) {
-    console.log('Hello VocabularyService Provider');
+vocabulario: FirebaseListObservable<any>;
+
+  constructor(public fireDatabase: AngularFireDatabase) {
+    
+    this.vocabulario = this.fireDatabase.list('/vocabulario');
+  }
+  getAll(){
+    return this.vocabulario;
   }
  
 }

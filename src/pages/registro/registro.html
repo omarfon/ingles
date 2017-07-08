@@ -12,28 +12,28 @@
 
    <h3 text-center>O</h3>
    <p>registrate con email:</p>
-   <ion-list>
-      <ion-item>
-      <ion-label floating>Usuario</ion-label>
-      <ion-input type="text"></ion-input>
-      </ion-item>
 
-      <ion-item>
+    <form #formulario="ngForm">
+        <ion-item>
       <ion-label floating>Email</ion-label>
-      <ion-input type="text"></ion-input>
+      <ion-input type="text"
+                  required 
+                  name="correo"
+                  ngModel></ion-input>
       </ion-item>
 
       <ion-item>
       <ion-label floating>Contraseña</ion-label>
-      <ion-input type="password"></ion-input>
+      <ion-input type="password"
+                  required 
+                  name="clave"
+                  ngModel></ion-input>
       </ion-item>
 
-      <ion-item>
-      <ion-label floating>Repetir contraseña</ion-label>
-      <ion-input type="password"></ion-input>
-      </ion-item>
-    </ion-list>
 
-    <button ion-button text-center (click)="irAList()" full color="ifeep">registrar</button>
+    <button ion-button text-center (click)="registrarUsuario(formulario)" full color="ifeep">registrar</button>
+    </form>
+      
+    
      
 </ion-content>
