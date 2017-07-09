@@ -12,4 +12,10 @@
   <img [src]="g.imagen">
   <h3>{{g.titulo}}</h3>
   <p>{{g.contenido}}</p>
+  <h3>Ejemplos:</h3>
+  <ul >
+    <li *ngFor="let example of g.example">
+      {{example}}
+    </li>
+  </ul>
 </ion-content>

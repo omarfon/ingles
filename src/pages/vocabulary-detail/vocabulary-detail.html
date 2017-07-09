@@ -4,7 +4,6 @@
   <ion-navbar color="azul">
     <ion-title>{{vo.titulo}} </ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
@@ -14,16 +13,21 @@
     <ion-slide *ngFor="let slide of vo.slides">
       <ion-card >
         <img [src]="slide.imagen"/>
-        <ion-card-content>
-            <p class="tituloVocabulario">{{slide.textoIngles}}</p>
-             <p class="traduccionVocabulario">{{slide.traducion}}</p>
-             <div class="botonReproducir" text-center>
-                <button ion-fab rounded  (click)="reproducir(slide)" >
-                  <ion-icon name="play"></ion-icon>
-                </button>
-                <button ion-button color="ifeep">reproduce la frase con esta palabra</button>
+
+          <ion-card-content>
+                <div class="botonReproducir" text-center>
+                <ion-fab  left  middle (click)="reproducir(slide)" class="margenBoton">
+                  <button ion-fab mini>
+                    <ion-icon name="play"></ion-icon>
+                  </button>
+                </ion-fab>
              </div>
-        </ion-card-content>  
+            <p class="tituloVocabulario" (click)="reproducir(slide)">{{slide.textoIngles}}</p>
+             <p class="traduccionVocabulario">{{slide.traducion}}</p>
+              <div class="frase">
+                <button ion-button color="ifeep">reproduce la frase</button>
+              </div>
+          </ion-card-content>
       </ion-card>
     </ion-slide> 
   </ion-slides> 

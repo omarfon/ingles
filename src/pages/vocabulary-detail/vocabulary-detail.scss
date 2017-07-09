@@ -9,10 +9,23 @@ page-vocabulary-detail {
         border-bottom:none !important;
     }
     .swiper-wrapper{
-        height: 70%;
+        height: 75%;
     }
     .tituloVocabulario{
-        font-size:1.5em;
+        font-size:2em;
         color: #3FC6F5;
+        text-align: right;
+        padding-top: 20px;
+        margin-right:20px;
+    }
+    .traduccionVocabulario{
+        text-align: right;
+        font-size:1.4em;
+        color:grey;
+        padding: none;
+        margin-right: 20px;
+    }
+    .frase{
+        margin-top:30px;
     }
 }

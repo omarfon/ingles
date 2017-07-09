@@ -10,6 +10,7 @@ export const GRAMMAR =[
     {
         id: 2,
         imagen:'',
+        resumen:'',
         titulo:'There is-are / a - an / The',
         contenido:'',
         icono:''   
@@ -17,15 +18,27 @@ export const GRAMMAR =[
      {
         id: 3,
         imagen:'',
+        resumen:'Utilizamos el verbo “have got” para: Mostrar que algo le',
         titulo:'Have / Has got',
-        contenido:'',
-        icono:''   
+        contenido:'Utilizamos el verbo “have got” para: Mostrar que algo le pertenece a alguien. Describir características físicas de una persona, animal u objeto. Al conjugarlo con los pronombres debe seguir la siguiente estructura:',
+        example:[
+                'I have got a beautiful car.',
+                '/ai jáf got a biútiful kár/',
+                'Yo tengo un carro hermoso.'
+        ],
+        icono:'' ,  
     },
     {
         id: 4,
         imagen:'',
+        resumen:'La forma negativa del verbo se aplica para negar la acción',
         titulo:'Present Simple',
-        contenido:'',
+        contenido:'La forma negativa del verbo se aplica para negar la acción indicada por el verbo. Para hacer oraciones negativas, utilizamos los auxiliares do y does y agregamos la palabra not.',
+        example:[
+                "DO: I, YOU, WE, THEY  - You + do + not + play",
+                ' DOES: HE, SHE, IT  He + does + not + play',
+                'En lenguaje informal, pueden utilizarse las formas cortas o contracciones:'
+        ] ,
         icono:''   
     },
     {
