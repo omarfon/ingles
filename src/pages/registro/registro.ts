@@ -1,3 +1,4 @@
+import { LoginPage } from './../login/login';
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
 import { TabsPage } from '../tabs/tabs';
@@ -36,4 +37,7 @@ export class RegistroPage {
             alerta.present();
           })
  }
+irALogin(){
+  this.navCtrl.push(LoginPage);
+}
 }

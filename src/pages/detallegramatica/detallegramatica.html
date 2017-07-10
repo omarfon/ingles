@@ -1,7 +1,7 @@
 
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="azul">
     <ion-title>{{g.titulo}}</ion-title>
   </ion-navbar>
 
@@ -11,7 +11,7 @@
 <ion-content padding text-center>
   <img [src]="g.imagen">
   <h3>{{g.titulo}}</h3>
-  <p>{{g.contenido}}</p>
+  <p *ngFor="let contenido of g.contenido">{{contenido}}</p>
   <h3>Ejemplos:</h3>
   <ul >
     <li *ngFor="let example of g.example">

@@ -1,3 +1,4 @@
+import { RegistroPage } from './../registro/registro';
 import { NgForm } from '@angular/forms';
 import { AutenticacionService } from './../../app/servicios/autenticacion.service';
 import { Component } from '@angular/core';
@@ -32,5 +33,8 @@ iniciarSesion(formulario: NgForm){
             })
             alerta.present();
           })
+}
+irARegistro(){
+  this.navCtrl.push(RegistroPage);
 }
 }

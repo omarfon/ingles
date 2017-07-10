@@ -10,6 +10,7 @@ import firebase from 'firebase';
 
 import { HomePage } from '../pages/home/home';
 import { AutenticacionService } from "./servicios/autenticacion.service";
+import { BienvenidaPage } from './../pages/bienvenida/bienvenida';
 @Component({
   templateUrl: 'app.html'
 })
@@ -20,6 +21,7 @@ export class MyApp {
   config = ConfigPage;
   tabs = TabsPage;
   login = LoginPage;
+  bien = BienvenidaPage;
 
 usuarioEstaConectado = false;
 
@@ -45,7 +47,7 @@ usuarioEstaConectado = false;
           this.menu.setRoot(this.tabs);
         }else{
           this.usuarioEstaConectado = false;
-          this.menu.setRoot(this.login);
+          this.menu.setRoot(HomePage);
         }
       }
     )
